@@ -18,12 +18,12 @@ let Aposta3 = [12, 56, 32, 49, 50, 54];
 let todasApostas = [Aposta1, Aposta2, Aposta3];
 
 
-for(let indexFullAposta = 0; indexFullAposta < todasApostas.length; indexFullAposta += 1) {
+for(let indexFullAposta = 0; indexFullAposta < todasApostas.length; indexFullAposta++) {
     numeroDeAcertos = 0;
 for(let indexAposta = 0; indexAposta < todasApostas[indexFullAposta].length; indexAposta += 1) {
     for(let indexMega = 0; indexMega < NumerosMegaSena.length; indexMega += 1) {
         if(todasApostas[indexFullAposta] [indexAposta] === NumerosMegaSena[indexMega]){
-            numeroDeAcertos += 1
+            numeroDeAcertos++
         };
     };
 };
